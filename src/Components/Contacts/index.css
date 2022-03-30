@@ -1,0 +1,132 @@
+.contacts-container {
+    background: whitesmoke;
+}
+.contacts-header {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+
+.contacts-header .background {
+    width: inherit;
+    height: inherit;
+}
+
+.header {
+    position: absolute;
+    font-family:Tahoma, sans-serif;
+    font-size: 48px;
+    font-weight: bolder;
+    font-style: italic;
+    line-height: 1.5px;
+    top: 40%;
+    right: 20%;
+    z-index: inherit;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    margin: 40px;
+    background: whitesmoke;
+}
+
+@media screen and (max-width:500px) {
+    .contact-section{
+        flex-direction: column;
+    }
+
+    .contact-card-image {
+        width: 30px;
+        height: 30px;
+    }
+
+    .form-container .row {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-card p {
+    font-family: cursive;
+    font-weight: bolder;
+}
+
+.contact-card-image {
+    width: 60px;
+    height: 60px;
+}
+
+/*********************
+    form section
+
+*********************/
+
+.form-section {
+    background: rgb(237, 237, 237);
+}
+
+.form-header {
+    font: oblique bolder 32px 'Gill Sans';
+    text-align: center;
+    padding: 30px;
+}
+
+.form-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container .row {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.form-inputs {
+    border: none;
+    background: none;
+    border-bottom: 2px solid rgb(160, 160, 160);
+    width: 40%;
+    margin: 30px;
+}
+
+.form-inputs:focus {
+    outline: none;
+}
+
+.form-query {
+    align-self: center;
+    background: rgb(237, 237, 237);
+    resize: none;
+    columns: 30;
+    width: 88%;
+    overflow: unset;
+    border: none;
+    border-bottom: 2px solid rgb(160, 160, 160);
+    margin: 10px 20px 0px 20px;
+}
+
+.form-query:focus {
+    outline: none;
+}
+
+.form-container .form-submit-button {
+    width: 100px;
+    height: 40px;
+    margin: 50px;
+    border: 1px solid black;
+    background: whitesmoke;
+    color: black;
+}

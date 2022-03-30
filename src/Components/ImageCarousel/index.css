@@ -1,0 +1,38 @@
+/* .carousel {
+    position: relative;
+} */
+
+.carousel-container {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+     height: calc(100vh - 63.64px);
+}
+
+.carousel-image {
+    margin: 0px;
+    width: inherit;
+    height: inherit;
+    display: none;
+}
+
+.carousel-image-current {
+    display: block;
+}
+
+.navigator {
+    background-color: rgb(236, 189, 102);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    z-index: 200;
+    opacity: 0.6;
+}
+
+.left-arrow {
+    left: 0px;
+}
+
+.right-arrow {
+    right: 0px;
+}

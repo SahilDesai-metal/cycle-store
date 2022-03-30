@@ -1,0 +1,9 @@
+.AccordionHeader {
+    user-select: none;
+    font-weight: bolder;
+    font-size: 2.2rem;
+}
+
+.AccordionContent {
+    font-size: 1.5rem;
+}

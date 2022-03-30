@@ -1,0 +1,40 @@
+.container {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: aquamarine;
+    margin: 15px;
+    width: 22%;
+    height: 300px;
+    box-shadow: 1px 3px 3px darkgray;
+    transition: 0.6s;
+}
+
+.img-container {
+    position: relative;
+}
+
+.card:hover {
+    z-index: 10;
+    transform: scale(1.15);
+}
+
+.App {
+  text-align: center;
+  clear: both;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1.App {
+  margin:0px;
+  padding: 0px;
+}
+
+.card p, .card span {
+    font-size: 1.2em;
+}

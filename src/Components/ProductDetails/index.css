@@ -1,0 +1,231 @@
+/**************************
+    Products Detail Header
+    
+*************************/
+
+.ProductHeader {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.ProductImage {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.ProductPic {
+    width: 100%;
+    height: 500px;
+}
+
+.ProductPic img {
+    padding: 20px;
+    width: inherit;
+    height: inherit;
+}
+
+.ProductPrice {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.price, .compare {
+    background: rgb(226, 33, 33);
+    padding: 20px 70px 20px 70px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 1.2rem;
+    font-weight: bolder;
+    border: 0.1rem solid black;
+}
+
+.price {
+    background: white;
+}
+
+.ProductDetailSummary {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 1;
+}
+
+.ProductBriefHeader {
+    padding: 30px;
+    font-family: cursive;
+    font-size: 3rem;
+    font-weight: bolder;
+    font-style: italic;
+    color: rgb(226, 33, 33);
+    align-self: center;
+}
+/*********************************
+    ProductDetails Feature Section
+
+*********************************/
+
+
+.FeatureSectionContainer h2 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: cursive;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.FeatureSectionToggler {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.FeatureSectionToggler button{
+    margin: 20px;
+    font-size: 3em;
+    outline: none;
+    border: none;
+    background: none;
+    font-weight: bolder;
+    animation: 2s linear 0s infinite alternate bounce;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.FeatureContainer {
+    padding: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    animation: top_down 1s linear forwards 1 none;
+}
+
+@keyframes top_down {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.ClosedFeatureContainer {
+    display: none;
+}
+
+.Feature {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    border: 1px solid black;
+}
+
+.Feature img {
+    height: 150px;
+}
+
+@media screen and (max-width:500px) {
+    .FeatureContainer {
+        width: 10%;
+        flex-direction: column;
+    }
+}
+
+/***************************
+    
+    FLOATING BUTTON
+
+***************************/
+
+.ProductDetailSection {
+    position: relative;
+}
+
+.FloatingComp {
+    position: sticky;
+    margin: 30px;
+    bottom: 60px;
+}
+
+.FloatingButton {
+    background: rgb(255, 35, 35);
+    padding: 10px 20px;
+    border-radius: 5%;
+}
+
+.FloatingContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.translateButton {
+    transition: transform 1s;
+    transform: translateX(200px);
+}
+
+/******************************
+    Complete Your Experience 
+
+*******************************/
+
+.CompleteYourExperienceSection {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    background: rgb(238, 238, 238);
+}
+
+.CompleteYourExperienceSection h1 {
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: bolder;
+    font-style: italic;
+    margin: 20px;
+}
+
+.CompleteExperienceContainer {
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+}
+
+.CompleteExperienceContainer .ProductCard {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+}
+
+.CEProductImage {
+    width: inherit;
+    height: 70%;
+}
+
+.AccessoriesLoadButton {
+    background: white;
+    width: 15%;
+    padding: 15px;
+    margin: 10px;
+    align-self: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}

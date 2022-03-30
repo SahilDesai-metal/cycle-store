@@ -1,0 +1,30 @@
+.NavigationBar {
+    display: block;
+    background-color: tomato;
+    width: 100vw;
+    height: 64px;
+    margin: 0px;
+    clear: both;
+}
+
+.NavigationBar li{
+    background-color: tomato;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    float: left;
+}
+
+.NavigationBar button {
+    background-color: tomato;
+    padding: 20px;
+    margin: 0px;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.NavigationBar button:hover {
+    background-color: rgb(231, 87, 50);
+    color: rgb(255, 255, 255);
+}

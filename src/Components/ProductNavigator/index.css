@@ -1,0 +1,94 @@
+.NavigatorPageContainer {
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.FilterPane {
+    flex: 1 0 19%;
+}
+
+.FilterRow h1 {
+    padding: 15px;
+    margin: 8px;
+    font-family: cursive;
+    font-style: italic;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    border-bottom: 0.5px solid rgb(160, 158, 158);
+    user-select: none;
+}
+
+.FilterRow ul {
+    list-style-type: none;
+}
+
+.FilterRow li {
+    font-size: 1.7em;
+}
+
+.FilterRow input {
+    margin: 10px;
+    text-align: center;
+    width: 18px;
+    height: 18px;
+}
+
+.CheckBox {
+    padding: 10px;
+}
+
+.Separator {
+    flex: 1 0 0.05%;
+    background: black;
+}
+
+/********************************
+        LANDING PANE
+
+********************************/
+
+.LandingPane {
+    flex: 1 0 80%;
+    margin: 10px;
+}
+
+.LandingPaneContainer {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/*******************************
+    ProductRow
+
+*******************************/
+
+.ProductRow {
+    display: flex;
+    flex-flow: column wrap;
+    width: 31%;
+    border: 0.5px solid rgba(173, 216, 230, 0.849);
+    margin: 0.02px;
+}
+
+.ProductDetail > * {
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin: 8px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.ProductDetail .ProductType {
+    display: block;
+    color: red;
+}
+
+.ProductDetail > .ProductName {
+    font-size: 1.3rem;
+}
+
+.collapsed {
+    display: none;
+}

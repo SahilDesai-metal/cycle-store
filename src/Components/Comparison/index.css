@@ -1,0 +1,52 @@
+.ComparisonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.CycleInfoContainer {
+    flex: 0 0 48%;
+    margin: 40px 0px 0px 0px;
+}
+
+.cycle-img {
+    width: 100%;
+}
+
+.cycle-name {
+    font-size: 2em;
+    font-family: cursive;
+}
+
+.cycle-description {
+    overflow: auto;
+    font-size: 1.4em;
+}
+
+.cycle-specification {
+    padding: 20px;
+}
+
+.cycle-specification h3 {
+    color: rgb(94, 92, 92);
+}
+
+.specification-row {
+    display: flex;
+    flex-direction: row;
+    padding: 5px 5px 5px 0px;
+}
+
+.specification-key {
+    flex: 0 0 50%;
+    font-size: 1.4em;
+    color: rgb(94, 92, 92);
+}
+
+.specification-value {
+    flex: 0 0 50%;
+    text-align: end;
+    font-size: 1.4em;
+    font-weight: bolder;
+}
